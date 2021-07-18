@@ -1,13 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Chat Simples</title>
 </head>
+
 <body>
-    <h1>chat</h1>
+    <div class="page" id="chatName">
+        <div class="pageContent">
+            <div class="page-users">
+
+                <!-- USERS -->
+                <div class="users">
+                    <div class="users-content">
+                        <div class="img-user">
+                            <a href=""><img src="/img/user_m.svg" alt=""></a>
+                        </div>
+                        <div class="data-user">
+                            <a href="">Name</a>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                    <div class="options-user">
+                        <img src="" alt="">
+                        <p>09:30pm</p>
+                    </div>
+                </div>
+                <!-- USERS -->
+                <div class="users">
+                    <div class="users-content">
+                        <div class="img-user">
+                            <a href=""><img src="/img/user_m.svg" alt=""></a>
+                        </div>
+                        <div class="data-user">
+                            <a href="">Name (Você)</a>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                    <div class="options-user">
+                        <img src="" alt="">
+                        <p>09:30pm</p>
+                    </div>
+                </div><!-- USERS -->
+                <div class="users">
+                    <div class="users-content">
+                        <div class="img-user">
+                            <a href=""><img src="/img/user_m.svg" alt=""></a>
+                        </div>
+                        <div class="data-user">
+                            <a href="">Name</a>
+                            <p>Description</p>
+                        </div>
+                    </div>
+                    <div class="options-user">
+                        <img src="" alt="">
+                        <p>09:30pm</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="page-chat">
+                <div class="chat-contet">
+                    <div class="chat-user">
+                        <div class="chat-data">
+                            <div class="img-chat">
+                                <a href=""><img src="/img/user_m.svg" alt=""></a>
+                            </div>
+                            <div class="name">
+                                <a href="">Name</a>
+                            </div>
+                        </div>
+                        <div class="chat-icon">
+                            <a href=""><img src="/img/pontos.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="chat-log">
+                        <div class="m-status">
+                            <a href="">Name</a>
+                            <p>saiu da sala</p>
+                        </div>
+                        <div class="chat-input">
+                            <div class="user-in">
+                                <p>Olá tudo bem?</p>
+                            </div>
+                        </div>
+                        <div class="chat-output">
+                            <div class="user-out">
+                                <a href="">Name</a>
+                                <p>Olá tudo bem?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-msg">
+                        <form action="" method="post">
+                            <textarea name="" placeholder="escreva uma mensagem ou (tecle ENTER)"></textarea>
+                            <div class="buttons">
+                                <div class="img-button">
+                                    <a href="">ENVIAR</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL -->
+    <div class="modal-chat">
+        <div class="modal-content">
+            <p>Entrar no Chat</p>
+            <form action="" method="post">
+                <div class="input-form">
+                    <img src="/img/user-icon.svg" alt="">
+                    <input type="text" name="" id="" placeholder="Informe seu nome">
+                </div>
+                <div class="button">
+                    <button>Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
