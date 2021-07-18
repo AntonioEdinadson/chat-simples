@@ -14,75 +14,31 @@
 </head>
 
 <body>
-    <div class="page" id="chatName">
-        <div class="pageContent">
+    <div class="page">
+        <div class="pageContent" id="pageContent">
             <div class="page-users">
 
                 <!-- USERS -->
-                <div class="users">
-                    <div class="users-content">
-                        <div class="img-user">
-                            <a href=""><img src="/img/user_m.svg" alt=""></a>
+                <div class="model">
+                    <div class="users">
+                        <div class="users-content">
+                            <div class="img-user">
+                                <a href=""><img src="" alt=""></a>
+                            </div>
+                            <ul class="data-user">
+                                <a href=""></a>
+                            </ul>
                         </div>
-                        <div class="data-user">
-                            <a href="">Name</a>
-                            <p>Description</p>
+                        <div class="options-user">
+                            <p></p>
                         </div>
-                    </div>
-                    <div class="options-user">
-                        <img src="" alt="">
-                        <p>09:30pm</p>
                     </div>
                 </div>
-                <!-- USERS -->
-                <div class="users">
-                    <div class="users-content">
-                        <div class="img-user">
-                            <a href=""><img src="/img/user_m.svg" alt=""></a>
-                        </div>
-                        <div class="data-user">
-                            <a href="">Name (Você)</a>
-                            <p>Description</p>
-                        </div>
-                    </div>
-                    <div class="options-user">
-                        <img src="" alt="">
-                        <p>09:30pm</p>
-                    </div>
-                </div><!-- USERS -->
-                <div class="users">
-                    <div class="users-content">
-                        <div class="img-user">
-                            <a href=""><img src="/img/user_m.svg" alt=""></a>
-                        </div>
-                        <div class="data-user">
-                            <a href="">Name</a>
-                            <p>Description</p>
-                        </div>
-                    </div>
-                    <div class="options-user">
-                        <img src="" alt="">
-                        <p>09:30pm</p>
-                    </div>
-                </div>
-
 
             </div>
+
             <div class="page-chat">
                 <div class="chat-contet">
-                    <div class="chat-user">
-                        <div class="chat-data">
-                            <div class="img-chat">
-                                <a href=""><img src="/img/user_m.svg" alt=""></a>
-                            </div>
-                            <div class="name">
-                                <a href="">Name</a>
-                            </div>
-                        </div>
-                        <div class="chat-icon">
-                            <a href=""><img src="/img/pontos.png" alt=""></a>
-                        </div>
-                    </div>
                     <div class="chat-log">
                         <div class="m-status">
                             <a href="">Name</a>
@@ -102,7 +58,8 @@
                     </div>
                     <div class="chat-msg">
                         <form action="" method="post">
-                            <textarea name="" placeholder="escreva uma mensagem ou (tecle ENTER)"></textarea>
+                            <textarea name="" id="msgInput"
+                                placeholder="escreva uma mensagem ou (tecle ENTER)"></textarea>
                             <div class="buttons">
                                 <div class="img-button">
                                     <a href="">ENVIAR</a>
@@ -118,17 +75,14 @@
     <div class="modal-chat">
         <div class="modal-content">
             <p>Entrar no Chat</p>
-            <form action="" method="post">
-                <div class="input-form">
-                    <img src="/img/user-icon.svg" alt="">
-                    <input type="text" name="" id="" placeholder="Informe seu nome">
-                </div>
-                <div class="button">
-                    <button>Entrar</button>
-                </div>
-            </form>
+            <div class="input-form">
+                <img src="/img/user-icon.svg" alt="">
+                <input type="text" name="" id="nameInput" placeholder="Informe seu nome e (tecle ENTER)">
+            </div>
         </div>
     </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

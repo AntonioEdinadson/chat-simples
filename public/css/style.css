@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    list-style: none;
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -35,6 +36,8 @@
     width: 70%;
     display: flex;    
     justify-content: center;
+
+    display: none;
 }
 
 .page-users {
@@ -66,7 +69,6 @@
     padding: 1px;
     margin-right: 15px;
     border-radius: 50%;
-    background-color: #fff;
 }
 
 .img-user img {
@@ -148,7 +150,7 @@
     width: 100%;    
     height: 80%;
     padding: 25px;  
-    overflow: auto;  
+    overflow: scroll;  
     background-color: rgb(250, 246, 246);
 }
 
@@ -235,8 +237,6 @@
     align-items: center;
     justify-content: center;
 
-    display: none;
-
     background-color: rgba(29, 28, 28, .4);
 }
 
@@ -257,7 +257,8 @@
 .input-form {
     width: 100%;
     display: flex;
-    border-bottom: 1px solid #536DFE;
+    margin: 20px 0;
+    border-bottom: 1px solid #7FB2F3;;
 }
 
 .input-form img {
@@ -292,4 +293,8 @@
     margin: 25px 0;
     border-radius: 5px;
     background-color:#536DFE;
+}
+
+.model {
+    display: none;
 }
