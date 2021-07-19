@@ -17,11 +17,38 @@ io.on('connection', (socket) => {
     console.log("CONEXAO DETECTADA...");
 
     socket.on('join-request', (username) => {
-        socket.username = username;
+        socket.username = username;        
+        
         connectedUsers.push(username);
         console.log(connectedUsers);
         
         socket.emit('user-ok', connectedUsers);
+        
+        // NOTIFICANDO ENTRADA DE USUARIOS
+        socket.broadcast.emit('list-update', {
+            joined: username,
+            list: connectedUsers
+        });
+    })
+
+    socket.on('disconnect', () => {
+        connectedUsers = connectedUsers.filter(user => user != socket.username);
+        console.log(connectedUsers);
+
+        socket.broadcast.emit('list-update', {
+            left: socket.username,
+            list: connectedUsers
+        });
+    })
+
+    socket.on('send-msg', (txt) => {
+        let obj = {
+            username: socket.username,
+            msg: txt,
+        };
+
+        socket.emit('show-msg', obj);
+        socket.broadcast.emit('show-msg', obj);
     })
 
 });
